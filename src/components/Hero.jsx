@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -16,12 +15,20 @@ const Hero = () => {
         <img  
           className="w-full h-full object-cover" 
           alt="Beautiful landscape of North East India"
-         src="https://storage.googleapis.com/hostinger-horizons-assets-prod/0f07c0bc-e59f-42de-aec6-76edee202496/4a56cf65c610bce7b65353ef351c5842.jpg" />
+          src="https://storage.googleapis.com/hostinger-horizons-assets-prod/0f07c0bc-e59f-42de-aec6-76edee202496/4a56cf65c610bce7b65353ef351c5842.jpg" 
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-20 h-full flex items-center">
         <div className="max-w-3xl">
+          {/* Logo */}
+          <img
+            src="/favi.png"
+            alt="Logo"
+            className="w-20 h-20 mb-6"
+          />
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
