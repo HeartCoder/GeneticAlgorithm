@@ -1,4 +1,3 @@
-
 export const formatPriceRange = (min, max) => {
   const roundedMin = Math.round(min);
   const roundedMax = max ? Math.round(max) : null;
@@ -51,7 +50,6 @@ export const getNewPriceDetails = (durationString, id, priceData) => {
   
   const originalMinForDisplay = baseMin;
   const originalMaxForDisplay = baseMax;
-
 
   return {
     original: formatPriceRange(originalMinForDisplay, originalMaxForDisplay),
